@@ -6,6 +6,9 @@
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder';
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 import "channels"
 import { initMapbox } from '../plugins/init_mapbox';
 
