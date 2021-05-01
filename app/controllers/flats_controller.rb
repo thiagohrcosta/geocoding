@@ -6,6 +6,13 @@ class FlatsController < ApplicationController
     @flats = Flat.all
   end
 
+  @markers = flats.geocoded.map do |flat|
+    {
+      lat: flat.latitude,
+      lng: flat.longitude
+    }
+  end
+
   # GET /flats/1 or /flats/1.json
   def show
   end
