@@ -3,3 +3,20 @@
 @import "avatar";
 @import "navbar";
 @import "map";
+
+.img-card{
+  width: 100px;
+}
+
+.bg-content{
+  background-image: url("https://res.cloudinary.com/dloadb2bx/image/upload/v1619910944/photo-1431274172761-fca41d930114_muu5gc.jpg");
+  height: 85vh;
+  background-size: 100% 100%;
+}
+
+.container-content{
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: -100px;
+}
