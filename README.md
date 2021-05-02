@@ -46,6 +46,7 @@ As user you can manipulate all **CRUD** operations like:
  - Insert a place (with address);
  - Edit a place
  - Delete a place;
+ - Search for any place on search bar;
 
 ## Search for a place
 The user can also use the search field to search for a desired place.
