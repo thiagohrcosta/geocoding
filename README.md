@@ -20,7 +20,7 @@ This project was created with:
 ![map](https://res.cloudinary.com/dloadb2bx/image/upload/v1619914453/france4_h7quk8.png)
 
 ## CSS Grid
-To display flats on index page was used CSS grid:
+To display places on main page was used CSS grid:
    ```
 .box-flex{
   display: grid;
