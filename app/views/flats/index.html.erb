@@ -7,31 +7,23 @@
 
     <p id="notice"><%= notice %></p>
 
-    <h1>Important Places in Paris</h1>
+    <h1 class="main-text">Lieux d'intérêt (<%= @flats.count %>)</h1>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Photo</th>
-          <th>Name</th>
-          <th>Address</th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
-
-      <tbody>
+    <div class="profile-container">
         <% @flats.each do |flat| %>
-          <tr>
-            <td><img class="img-card" src="<%= flat.photo %>"></td>
-            <td><%= flat.name %></td>
-            <td><%= flat.address %></td>
-            <td><%= link_to 'Show', flat %></td>
-            <td><%= link_to 'Edit', edit_flat_path(flat) %></td>
-            <td><%= link_to 'Destroy', flat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
+        <div class="card-box">
+            <img class="img-card" src="<%= flat.photo %>">
+            <p class="box-title"><%= flat.name %></p>
+            <p class="box-address"><%= flat.address %></p>
+            <div class="btn-actions">
+              <p><%= link_to 'Démontrer', flat, class: "btn-custom btn-show" %></p>
+              <p><%= link_to 'Éditer', edit_flat_path(flat), class: "btn-custom btn-edit" %></p>
+              <p><%= link_to 'Détruire', flat, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-custom btn-destroy" %></p>
+            </div>
+        </div>
         <% end %>
-      </tbody>
-    </table>
+
+    </div>
 
   </div>
 
