@@ -49,8 +49,6 @@ RSpec.describe Flat, type: :model do
       longitude: "",
       photo: ""
     )
-
     expect(flat4).to_not be_valid
   end
-
 end
